@@ -207,7 +207,7 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 const oldMovies = function (arr) {
-  let old = arr[0]; // inizializza con il primo film
+  let old = arr[0];
 
   arr.forEach((movies) => {
     if (movies.Year < old.Year) {
