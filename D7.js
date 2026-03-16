@@ -73,7 +73,7 @@ console.log(lenghts);
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
-function shots() {
+const shots = function () {
   const numArr1 = [];
   const numbers4 = Array.from({ length: 99 }, (_, i) => i + 1);
 
@@ -84,7 +84,7 @@ function shots() {
   });
 
   return numArr1;
-}
+};
 
 console.log(shots());
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
