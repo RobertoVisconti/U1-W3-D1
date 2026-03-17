@@ -51,9 +51,9 @@ console.log(sumArr(numbers1));
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
-function increaseArr(arr, n) {
+const increaseArr = function (arr, n) {
   return arr.map((num) => num + n);
-}
+};
 const numbers3 = [7, 14, 21, 28, 35];
 const increase = 3;
 
@@ -271,3 +271,26 @@ function searchFilm1(arr, anno) {
 
 const index = searchFilm1(movies, 2019);
 console.log("Indice del primo film del 2019:", index);
+
+let stringFunction = function (string1, string2) {
+  return string1.slice(0, 2) + string2.slice(-3);
+};
+console.log(stringFunction("Ariel", "Haru").toUpperCase());
+
+let arrayTenElements = function (array) {
+  for (let i = 0; i < 10; i++) {
+    let number = Math.floor(Math.random() * 101);
+    array.push(number);
+  }
+  return array;
+};
+
+console.log(arrayTenElements([]));
+
+let marley = [2, 39, 12, 21, 9, 0, 18, 71];
+let evenNumbers = function (array) {
+  for (let i = 0; i < array.length; i++) {
+    array.filter((i) => i % 2 === 0);
+  }
+};
+console.log(evenNumbers(marley));
